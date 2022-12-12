@@ -1,0 +1,13 @@
+﻿@model List<Camacho1.Models.CarViewModel>;
+
+<div class="text-center">
+    <h1 class="display-4">Cars</h1>
+    
+    <ul>
+        @foreach (var car in Model)
+        {
+            <li>@car.Name - @car.Km</li>
+        }
+    </ul>
+
+</div>

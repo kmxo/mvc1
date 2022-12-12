@@ -1,0 +1,24 @@
+﻿
+@model Camacho1.Models.CarViewModel
+
+<form asp-action="CreateCar" method="post">
+    <div class="card">
+
+        <div class="card-header">
+            <h5>Create a new car</h5>
+        </div>
+
+        <div class="card-body">
+            <label>Car</label>
+            <input type="text" class="form-control" asp-for="Name" name="Name"/>
+            
+            <label>Kms</label>
+            <input type="number" class="form-control" asp-for="Km" name="Km" />
+        </div>
+
+        <div class="card-footer">
+            <input type="submit" value="Send"/>
+        </div>
+
+    </div>
+</form>
